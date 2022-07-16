@@ -20,6 +20,20 @@ class HubStats {
       return sum / data.length;
    }
 
+   medianOf(data) {
+      data = data.sort((a, b) => a - b);
+      let lastItem = data[data.length - 1];
+
+      return data.length % 2
+         ? data[data.indexOf(lastItem) / 2]
+         : data[(data.indexOf(lastItem) - 1) / 2] ===
+           data[(data.indexOf(lastItem) + 1) / 2]
+         ? data[(data.indexOf(lastItem) - 1) / 2]
+         : (data[(data.indexOf(lastItem) - 1) / 2] +
+              data[(data.indexOf(lastItem) + 1) / 2]) /
+           2;
+   }
+
    modeOf(data) {
       return data.sort(
          (a, b) =>
@@ -28,3 +42,7 @@ class HubStats {
       );
    }
 }
+
+let x = new HubStats();
+
+console.log(x.medianOf([0, 1, 1, 2, 2, 3, 3, 5, 5, 7]));
