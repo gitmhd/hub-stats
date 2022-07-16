@@ -1,0 +1,29 @@
+{
+  "name": "hub-stats",
+  "version": "1.0.0",
+  "description": "HubStats is a library extends you with powerful statistical tools.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmhd/hub-stats.git"
+  },
+  "keywords": [
+    "hub",
+    "hub-stats",
+    "math",
+    "statistics",
+    "range",
+    "mode",
+    "median",
+    "mean"
+  ],
+  "author": "Mohamed Albissaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gitmhd/hub-stats/issues"
+  },
+  "homepage": "https://github.com/gitmhd/hub-stats#readme"
+}
