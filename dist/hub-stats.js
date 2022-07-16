@@ -19,4 +19,12 @@ class HubStats {
       }
       return sum / data.length;
    }
+
+   modeOf(data) {
+      return data.sort(
+         (a, b) =>
+            data.filter((v) => v === a).length -
+            data.filter((v) => v === b).length
+      );
+   }
 }
