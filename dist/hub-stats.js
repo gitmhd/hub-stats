@@ -7,4 +7,8 @@ class HubStats {
    constructor() {
       this.version = "1.0.0";
    }
+
+   rangeBetween(num1, num2) {
+      return num2 - num1;
+   }
 }
