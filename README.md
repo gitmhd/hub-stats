@@ -4,7 +4,7 @@
 
 ## Features
 
-`HubStats` extends you with statistical methods those you can use them to make statistics in your application.
+`HubStats` is a library extends you with statistical methods those you can use them to make statistics in your application.
 
 -  Pure JavaScript.
 -  Very Lightweight, Less Than 1KB.
